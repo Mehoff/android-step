@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Step</string>
+    <string name="button_increment">Increment</string>
+    <string name="button_decrement">Decrement</string>
+</resources>
