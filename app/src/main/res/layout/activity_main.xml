@@ -1,109 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TableLayout
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/calc_expression"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:text="5 + 3"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calc_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow>
-
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="bottom">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="80dp">
             <Button
                 android:id="@+id/btn_clear"
-                android:text="@string/operator_clear"></Button>
-
+                android:text="@string/operator_clear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_divide"
-                android:text="@string/operator_divide"></Button>
+                android:text="@string/operator_divide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@drawable/button_number">
+            </Button>
         </TableRow>
-
-        <TableRow>
-
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp">
             <Button
                 android:id="@+id/btn_7"
-                android:text="@string/num_7"></Button>
-
+                android:text="@string/num_7"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_8"
-                android:text="@string/num_8"></Button>
-
+                android:text="@string/num_8"
+                android:background="@drawable/button_number"
+                >
+            </Button>
             <Button
                 android:id="@+id/btn_9"
-                android:text="@string/num_9"></Button>
-
+                android:text="@string/num_9"
+                android:background="@drawable/button_number"
+                >
+            </Button>
             <Button
                 android:id="@+id/btn_multiply"
-                android:text="@string/operator_multiply"></Button>
+                android:text="@string/operator_multiply"
+                android:background="@drawable/button_number"
+                >
+            </Button>
         </TableRow>
-
-        <TableRow>
-
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp">
             <Button
                 android:id="@+id/btn_4"
-                android:text="@string/num_4"></Button>
-
+                android:text="@string/num_4"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_5"
-                android:text="@string/num_5"></Button>
-
+                android:text="@string/num_5"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_6"
-                android:text="@string/num_6"></Button>
-
+                android:text="@string/num_6"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_minus"
-                android:text="@string/operator_minus"></Button>
+                android:text="@string/operator_minus"
+                android:background="@drawable/button_number">
+            </Button>
         </TableRow>
-
-        <TableRow>
-
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp">
             <Button
                 android:id="@+id/btn_1"
-                android:text="@string/num_1"></Button>
-
+                android:text="@string/num_1"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_2"
-                android:text="@string/num_2"></Button>
-
+                android:text="@string/num_2"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_3"
-                android:text="@string/num_3"></Button>
-
+                android:text="@string/num_3"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_plus"
-                android:text="@string/operator_plus"></Button>
+                android:text="@string/operator_plus"
+                android:background="@drawable/button_number">
+            </Button>
         </TableRow>
-
-        <TableRow>
-
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="5dp">
             <Button
                 android:id="@+id/btn_0"
-                android:text="@string/num_0"></Button>
-
+                android:text="@string/num_0"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_asterisk"
-                android:text="@string/operator_asterisk"></Button>
-
+                android:text="@string/operator_asterisk"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_erase"
-                android:text="@string/operator_erase"></Button>
-
+                android:text="@string/operator_erase"
+                android:background="@drawable/button_number">
+            </Button>
             <Button
                 android:id="@+id/btn_equals"
-                android:text="@string/operator_equals"></Button>
+                android:text="@string/operator_equals"
+                android:background="@drawable/button_number">
+            </Button>
         </TableRow>
     </TableLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

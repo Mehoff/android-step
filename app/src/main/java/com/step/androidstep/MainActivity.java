@@ -18,14 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        TextView counterTextView = findViewById(R.id.textView_counter);
-        Button incrementButton = findViewById(R.id.button_increment);
-        Button decrementButton = findViewById(R.id.button_decrement);
-
-        incrementButton.setOnClickListener(e -> { incrementCounter(); updateTextViewText(counterTextView); });
-        decrementButton.setOnClickListener(e -> { decrementCounter(); updateTextViewText(counterTextView); });
+        getSupportActionBar().hide();
     }
+
 
     private void incrementCounter(){
         this.counter += 1;
