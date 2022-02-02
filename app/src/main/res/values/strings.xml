@@ -2,4 +2,24 @@
     <string name="app_name">Android Step</string>
     <string name="button_increment">Increment</string>
     <string name="button_decrement">Decrement</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+    <string name="num_0">0</string>
+    <string name="operator_multiply">\u2715</string>
+    <string name="operator_divide">\u00f7</string>
+    <string name="operator_plus">\u002b</string>
+    <string name="operator_minus">\u2212</string>
+    <string name="operator_equals">\u003d</string>
+    <string name="operator_asterisk">,</string>
+    <string name="operator_erase">\u232b</string>
+    <string name="operator_clear">C</string>
+
+
 </resources>
