@@ -12,18 +12,17 @@
         android:id="@+id/calc_expression"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="5 + 3"
+        android:text="0"
         android:textAlignment="textEnd"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/calc_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="8"
+        android:text="0"
         android:textAlignment="textEnd"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -166,5 +165,4 @@
             </Button>
         </TableRow>
     </TableLayout>
-
 </LinearLayout>
